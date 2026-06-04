@@ -1,0 +1,6 @@
+# Ignore all files
+*
+# Allow directories so ignore rules apply recursively
+!*/
+# Keep this .gitignore file tracked
+!.gitignore
