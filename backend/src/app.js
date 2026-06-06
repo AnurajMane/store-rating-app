@@ -7,6 +7,8 @@ const authRoutes = require("./routes/authRoutes");
 const testRoutes = require("./routes/testRoutes");
 const adminRoutes = require("./routes/adminRoutes");
 const userRoutes = require("./routes/userRoutes");
+const storeRoutes = require("./routes/storeRoutes");
+const storeOwnerRoutes = require("./routes/storeOwnerRoutes");
 
 const app = express();
 
@@ -16,6 +18,9 @@ app.use("/api/auth", authRoutes);
 app.use("/api/test", testRoutes);
 app.use("/api/admin", adminRoutes);
 app.use("/api/users", userRoutes);
+app.use("/api/stores", storeRoutes);
+app.use("/api/store-owner", storeOwnerRoutes);
+
 app.get("/", async (req, res) => {
   try {
     const result = await pool.query("SELECT NOW()");
