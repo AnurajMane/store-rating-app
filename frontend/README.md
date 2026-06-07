@@ -67,44 +67,6 @@ A full-stack web application that allows users to browse stores, submit ratings,
 
 ---
 
-# Project Structure
-
-```text
-store-rating-app/
-│
-├── backend/
-│   ├── src/
-│   │   ├── config/
-│   │   ├── controllers/
-│   │   ├── middleware/
-│   │   ├── routes/
-│   │   ├── app.js
-│   │   └── server.js
-│   │
-│   ├── .env
-│   ├── package.json
-│   └── node_modules/
-│
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   │   ├── api/
-│   │   ├── components/
-│   │   ├── context/
-│   │   ├── pages/
-│   │   ├── routes/
-│   │   ├── App.jsx
-│   │   └── main.jsx
-│   │
-│   ├── index.html
-│   ├── vite.config.js
-│   ├── package.json
-│   └── node_modules/
-│
-└── README.md
-```
-
----
 
 # Database Setup
 
@@ -410,10 +372,6 @@ http://localhost:5000
 - Integration Testing
 
 ---
-
-# Author
-
-Anuraj Mane
 
 Full Stack Web Application built using:
 
