@@ -3,6 +3,7 @@ const express = require("express");
 const router = express.Router();
 
 const authenticate = require("../middleware/authMiddleware");
+const authorize = require("../middleware/roleMiddleware");
 
 const {
   getAllStores,
@@ -28,6 +29,16 @@ router.post(
   authenticate,
   submitRating
 );
+
+router.put(
+  "/:storeId/rating",
+  authenticate,
+  authorize(
+    "USER"
+  ),
+  updateRating
+);
+
 
 
 module.exports = router;
