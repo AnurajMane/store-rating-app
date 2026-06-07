@@ -357,6 +357,9 @@ Backend:
 http://localhost:5000
 ```
 
+<img width="1007" height="830" alt="image" src="https://github.com/user-attachments/assets/690ede1c-db8c-43af-92e1-4bf19b0d0934" />
+
+
 ---
 
 # Future Improvements
